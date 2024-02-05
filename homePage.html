@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/logo.png">
+  <link rel="stylesheet" href="./css/homePage.css">
+  <link rel="stylesheet" href="./css/all.css">
+  <title>דף הבית</title>
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="./homePage.html">
+      <img src="./images/logo.png" class="logo">
+    </a>
+    <nav>
+      <ul class="main nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./homePage.html">בית</a>
+        </li>
+        <li class="nav-item-galery">
+          <a class="nav-link" href="#galery">גלריה</a>
+        </li>
+        <li class="nav-item-detailed">
+          <a class="nav-link" href="./html/outside.html">צילומי חוץ</a>
+        </li>
+        <li class="nav-item-detailed">
+          <a class="nav-link" href="./html/new-born.html">ניו בורן</a>
+        </li>
+        <li class="nav-item-detailed">
+          <a class="nav-link" href="./html/smach-cake.html">סמאש קייק</a>
+        </li>
+        <li class="nav-item-detailed">
+          <a class="nav-link" href="./html/chalake.html">חלאקה</a>
+        </li>
+        <li class="nav-item-detailed">
+          <a class="nav-link" href="./html/product.html">מוצרים</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./html/behind.html">מאחורי הקלעים</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./html/prices.html">מחירון</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#conect">צרו קשר</a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="moveimges">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="./images/new-born-flowers.jpg" class="imgMove">
+
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./images/beach.jpg" class="imgMove">
+
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./images/sea.jpg" class="imgMove">
+
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./images/girltouchheare.jpg" class="imgMove">
+        </div>
+
+
+        <div class="mySlides fade">
+          <img src="./images/smash.jpg" class="imgMove">
+        </div>
+
+
+        <div class="mySlides fade">
+          <img src="./images/flowers.jpg" class="imgMove">
+
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./images/cola.JPG" class="imgMove">
+
+        </div>
+
+
+
+        <div class="mySlides fade">
+          <img src="./images/twochildren~1.jpg" class="imgMove">
+
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./images/newbornhome.jpg" class="imgMove">
+
+        </div>
+        <div class="mySlides fade">
+          <img src="./images/girlbaby.jpg" class="imgMove">
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          setTimeout(showSlides, 2000);
+        }
+      </script>
+
+      <h1 id="galery">גלריה</h1>
+
+      <div class="galeryblock">
+
+        <div class="galery">
+          <a href="./html/outside.html">
+            <img src="./images/childrencola.jpg" class="galeryImg">
+          </a>
+          <div class="desc">צילומי חוץ</div>
+        </div>
+
+        <div class="galery">
+          <a href="./html/new-born.html">
+            <img src="./images/newbornboy.jpg" class="galeryImg">
+            <div class="desc">ניו בורן</div>
+        </div>
+
+        <div class="galery">
+          <a href="./html/smach-cake.html">
+            <img src="./images/smashcakechany.jpg" class="galeryImg">
+          </a>
+          <div class="desc">סמאש קייק</div>
+        </div>
+
+
+        <div class="galery">
+          <a href="./html/chalake.html">
+            <img src="./images/chalake.jpg" class="galeryImg">
+          </a>
+          <div class="desc">חלאקה</div>
+        </div>
+
+
+
+        <div class="galery">
+          <a href="./html/product.html">
+            <img src="./images/mangets.jpg" class="galeryImg">
+          </a>
+          <div class="desc">מוצרים</div>
+        </div>
+
+      </div>
+
+
+
+      <div class="formandabout" id="conect">
+
+        <div class="form">
+          <form action="/action_page.php">
+
+            <input type="text" id="fname" name="firstname" placeholder="שם פרטי" required>
+
+
+            <input type="text" id="lname" name="lastname" placeholder="שם משפחה">
+
+            <input type="text" id="tel" name="tel" maxlength="11" placeholder="פלאפון" required
+              pattern="[0-9]{3}[0-9]{7}" title="  יש להכניס ערכים בפורמט xxx-xxxxxxx">
+
+
+
+            <input type="text" id="lname" name="lastname" placeholder="דואל" multiple>
+
+
+            <input type="text" id="lname" name="lastname" placeholder="הערות...">
+
+
+            <button class="button"><span>שלח </span></button>
+            <!-- <input type="submit" value="שלח"> -->
+          </form>
+        </div>
+        <div class="about">
+          <h4>נעים להכיר</h4>
+          <p>קוראים לי חני אקרמן ואני צלמת משפחה, מתמחה בצילומי ניו בורן.
+            <br>
+            למה דוקא ניו בורן?
+            <br>
+            כי את הטוהר והמלאכיות הזו אי אפשר למצוא בשום גיל אחר!
+            <br>
+            איתך בהתרגשות, בחוויה ובהנצחה של הרגעים הקסומים האלה לתמיד,
+            <br>
+            חני
+          </p>
+        </div>
+      </div>
+
+  </main>
+
+  <div class="footerp"></div>
+  <footer>
+
+    <div class="footerp">
+      <div class="address">
+        <i class='fa fa-home'></i>
+        <p>הירדן 15, בני ברק</p>
+      </div>
+      <div class="phone">
+        <i class='fas fa-phone'></i>
+        <p>פלאפון:0527119956</p>
+      </div>
+      <div class="gmail">
+        <i class='fa fa-envelope'></i>
+        <p>chanyphoto@gmail.com:דוא"ל</p>
+      </div>
+    </div>
+  </footer>
+  </div>
+</body>
+
+</html>

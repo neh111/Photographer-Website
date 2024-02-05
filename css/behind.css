@@ -1,0 +1,185 @@
+html {
+  width: 99.5%;
+    height: 100%;
+    overflow-x: hidden;
+} 
+
+body {
+  height: 100%;
+  background-color: rgb(230, 234, 235);
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  direction: rtl;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+}
+
+
+header {
+  background-color: rgb(238, 193, 142);
+  grid-row: 1/2;
+  position: fixed;
+  width: 100%;
+  z-index: 3000;
+  top: 0vh;
+  left: 0vw;
+  height: 90px
+}
+.main-nav,
+.nav-item,.nav-item-detailed {
+  display: inline-block;
+  padding: 1%;
+
+}
+.nav-item-galery{
+  display: none;
+}
+
+.main nav {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  padding-right: auto;
+}
+
+a .logo {
+  float: right;
+  margin-top: -0.8%;
+  width: 35%;
+  height: 135%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color:  rgb(230, 234, 235);
+}
+
+h4 {
+  direction: rtl;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: grey;
+ text-align:center; 
+ font-weight: 500;
+  font-size: 350%;
+  margin-top: 150px;
+  margin-bottom: 0;
+  padding-bottom: 2%;
+ /* margin:auto; */
+} 
+
+
+.first {
+    margin-top: auto;
+    /* display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row; */
+    display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+    /* justify-content: space-around; */
+}
+
+video {
+    width: 700px;
+    padding: 3%;
+}
+
+.about {
+  padding: 2%;
+  font-size: 150%;
+}
+
+
+i{
+    font-size: 180%;
+    margin-top: 10%;
+  }
+  .address,.phone,.gmail{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+  }
+  .gmail{
+    margin-top: 0.2%;
+  }
+  footer {
+    background-color: rgb(238, 193, 142);
+    grid-row: 5/6;
+    position: relative;
+      bottom: 0;
+      margin-right:-1.5%;
+    margin-left: -1.5%;
+  }
+  
+  .footerp {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+   @media screen and  (max-width:1000px){
+     video{
+       width: 75%; 
+    } 
+    h4{
+      margin-top: 20%;
+      margin-bottom: 0%;
+      font-size: 230%;
+    }
+    } 
+    @media screen and  (max-width:1160px){
+      .main-nav,
+    .nav-item,.nav-item-detailed {
+      padding: 2%;
+    }
+      .nav-item-detailed{
+           display:none;
+      }
+      .nav-item-galery{
+        display: inline
+      }
+       
+    }
+    
+  @media screen and  (max-width:770px){
+    a .logo{
+      width: 25%;
+      height: 115%;
+    }
+    header{
+      height: 80px;
+    } 
+   
+    footer{
+      height: 80px;
+      margin-bottom: -6%;
+    }
+    i{
+      font-size: 100%;
+      margin-top: 10%;
+    }
+    .address,.phone{
+      display: none;
+    }
+  
+    .gmail{
+      flex-direction: row;
+      margin: 2%;
+    }
+    
+  }
